@@ -1,59 +1,76 @@
+<script setup>
+const { path } = useRoute();
+const { data } = await useAsyncData(`content-${path}`, async () => {
+  // fetch document where the document path matches with the current route
+  let article = queryContent().where({ _path: path }).findOne();
+
+  return {
+    article: await article,
+  };
+});
+</script>
 <template>
   <div>
     <div id="share-buttons">
       <!-- Facebook -->
       <a
         class="facebook"
-        :href="'http://www.facebook.com/sharer.php?u=' + url"
+        :href="'http://www.facebook.com/sharer.php?u=' + data.article._path"
         onclick="window.open(this.href, 'twitter-share','width=580,height=296');return false;"
       >
-        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <font-awesome-icon icon="fa-brands fa-facebook-f" />
       </a>
 
       <!-- Twitter -->
       <a
         class="twitter"
         :href="
-          'https://twitter.com/share?url=' +
-          url +
+          'https://twitter.com/share?data.article._path=' +
+          data.article._path +
           '&amp;text=' +
-          this.$page.title
+          data.article.title
         "
         onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"
       >
-        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <font-awesome-icon icon="fa-brands fa-twitter" />
       </a>
 
       <!-- LinkedIn -->
       <a
         class="linkedin"
-        :href="'http://www.linkedin.com/shareArticle?mini=true&amp;url=' + url"
+        :href="
+          'http://www.linkedin.com/shareArticle?mini=true&amp;data.article._path=' +
+          data.article._path
+        "
         onclick="window.open(this.href, 'linkedin-share','width=580,height=296');return false;"
       >
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
+        <font-awesome-icon icon="fa-brands fa-linkedin-in" />
       </a>
 
       <!-- Google+ -->
-      <a
+      <!-- <a
         class="google"
-        :href="'https://plus.google.com/share?url=' + url"
+        :href="
+          'https://plus.google.com/share?data.article._path=' +
+          data.article._path
+        "
         onclick="window.open(this.href, 'googleplus-share','width=580,height=296');return false;"
       >
-        <i class="fa fa-google" aria-hidden="true"></i>
-      </a>
+        <font-awesome-icon icon="fa-brands fa-google-plus-g" />
+      </a> -->
 
       <!-- Reddit -->
       <a
         class="reddit"
         :href="
-          'http://reddit.com/submit?url=' +
-          url +
+          'http://reddit.com/submit?data.article._path=' +
+          data.article._path +
           '&amp;title=' +
-          this.$page.title
+          data.article.title
         "
         onclick="window.open(this.href, 'reddit-share','width=580,height=296');return false;"
       >
-        <i class="fa fa-reddit-alien" aria-hidden="true"></i>
+        <font-awesome-icon icon="fa-brands fa-reddit-alien" />
       </a>
 
       <!-- Email -->
@@ -61,38 +78,21 @@
         class="email"
         :href="
           'mailto:?Subject=' +
-          this.$page.title +
+          data.article.title +
           '&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 ' +
-          url
+          data.article._path
         "
       >
-        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <font-awesome-icon icon="fa-solid fa-envelope" />
       </a>
 
       <!-- Print -->
       <a href="javascript:;" onclick="window.print()" class="print">
-        <i class="fa fa-print" aria-hidden="true"></i>
+        <font-awesome-icon icon="fa-solid fa-print" />
       </a>
     </div>
   </div>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      localPath: String,
-    };
-  },
-  mounted() {
-    this.localPath = window.location.href;
-  },
-  computed: {
-    url: function () {
-      return this.localPath;
-    },
-  },
-};
-</script>
 <style scoped>
 #share-buttons {
   margin-top: 10px;
@@ -101,7 +101,7 @@ export default {
 }
 #share-buttons a {
   padding: 10px;
-  width: 20px;
+  width: 45px;
   border: 0;
   text-align: center;
   color: #ffffff;
