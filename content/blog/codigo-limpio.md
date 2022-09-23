@@ -127,6 +127,9 @@ Si gustan buscar mas información sobre como escribir código limpio les recomie
 Adiós!
 
 **Compártelo en tus redes Sociales!**
+
 ::SocialButtons
 ::
-<!-- <Disqus /> -->
+
+::Disqus
+::

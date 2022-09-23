@@ -17,7 +17,9 @@ const { data } = await useAsyncData(`content-${path}`, async () => {
       <!-- Facebook -->
       <a
         class="facebook"
-        :href="'http://www.facebook.com/sharer.php?u=' + url + data.article._path"
+        :href="
+          'http://www.facebook.com/sharer.php?u=' + url + data.article._path
+        "
         onclick="window.open(this.href, 'twitter-share','width=580,height=296');return false;"
       >
         <font-awesome-icon icon="fa-brands fa-facebook-f" />
@@ -28,7 +30,8 @@ const { data } = await useAsyncData(`content-${path}`, async () => {
         class="twitter"
         :href="
           'https://twitter.com/share?url + data.article._path=' +
-          url + data.article._path +
+          url +
+          data.article._path +
           '&amp;text=' +
           data.article.title
         "
@@ -42,7 +45,8 @@ const { data } = await useAsyncData(`content-${path}`, async () => {
         class="linkedin"
         :href="
           'http://www.linkedin.com/shareArticle?mini=true&amp;url + data.article._path=' +
-          url + data.article._path
+          url +
+          data.article._path
         "
         onclick="window.open(this.href, 'linkedin-share','width=580,height=296');return false;"
       >
@@ -66,7 +70,8 @@ const { data } = await useAsyncData(`content-${path}`, async () => {
         class="reddit"
         :href="
           'http://reddit.com/submit?url + data.article._path=' +
-          url + data.article._path +
+          url +
+          data.article._path +
           '&amp;title=' +
           data.article.title
         "
@@ -82,7 +87,8 @@ const { data } = await useAsyncData(`content-${path}`, async () => {
           'mailto:?Subject=' +
           data.article.title +
           '&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 ' +
-          url + data.article._path
+          url +
+          data.article._path
         "
       >
         <font-awesome-icon icon="fa-solid fa-envelope" />
