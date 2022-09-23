@@ -12,6 +12,7 @@ defineProps(["prev", "next"]);
     <li class="link-item prev">
       <NuxtLink v-if="prev" :to="prev._path">
         <!-- <ArrowLeftIcon class="icon stroke" /> -->
+        <font-awesome-icon icon="fa-solid fa-angle-left" />
         <span> {{ prev.title }} </span>
       </NuxtLink>
     </li>
@@ -19,6 +20,7 @@ defineProps(["prev", "next"]);
       <NuxtLink v-if="next" :to="next._path">
         <span> {{ next.title }} </span>
         <!-- <ArrowRightIcon class="icon stroke" /> -->
+        <font-awesome-icon icon="fa-solid fa-angle-right" />
       </NuxtLink>
     </li>
   </ul>
@@ -29,6 +31,6 @@ defineProps(["prev", "next"]);
   @apply flex gap-4 justify-between p-4 border border-slate-200 rounded-lg;
 }
 .link-item a {
-  @apply flex gap-2;
+  @apply flex gap-2 items-center;
 }
 </style>

@@ -1,8 +1,6 @@
 <!-- ./components/Tags.vue -->
 
 <script setup>
-// import icon
-// import { TagIcon } from "@heroicons/vue/solid";
 // tag list state
 const expanded = ref(false);
 // helper function to flatten tags array
@@ -37,7 +35,7 @@ console.log({ articleTags });
   <div class="tag-list" :class="{ active: expanded }">
     <!-- Button to toggle expand -->
     <button @click="toggleExpand" class="cta w-icon">
-      <TagIcon class="icon solid" />
+      <font-awesome-icon icon="fa-solid fa-tag" />
       <span>Tags</span>
     </button>
     <ul class="article-tags" :class="{ expanded: expanded }">

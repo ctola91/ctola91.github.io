@@ -35,13 +35,15 @@ useHead({
 <template>
   <main id="main" class="article-main">
     <header v-if="data.article" class="article-header">
-      <div class="img-cont h-72 mb-12">
+      <figure class="img-cont h-72 mb-12">
         <img
           :src="`/${data.article.img}`"
           :alt="data.article.title"
           class="rounded-2xl"
         />
-      </div>
+        <figcaption>Photo by <a href="https://unsplash.com/@martinbennie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">martin bennie</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
+  
+      </figure>
       <h1 class="heading">{{ data.article.title }}</h1>
       <p class="supporting">{{ data.article.description }}</p>
       <ul class="article-tags">

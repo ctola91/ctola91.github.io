@@ -1,5 +1,6 @@
 ---
 title: Código Limpio
+img: 'img/codigo-limpio.jpg'
 date: 2019-1-3
 tags: 
     - code

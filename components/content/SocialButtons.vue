@@ -7,7 +7,6 @@ const { data } = await useAsyncData(`content-${path}`, async () => {
 
   return {
     article: await article,
-    url,
   };
 });
 </script>
