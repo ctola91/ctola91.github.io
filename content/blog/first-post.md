@@ -2,6 +2,10 @@
 title: 'Nuxt Content v2 is awesome!'
 description: 'This is my first article!'
 img: 'img/cover.jpg'
+imgAuthorName: martin bennie
+imgAuthorLink: https://unsplash.com/@martinbennie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+imgSiteName: Unsplash
+imgSiteLink: https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 tags: [Nuxt, Content, Learning, first]
 ---
 

@@ -1,6 +1,9 @@
+
 <!-- ./pages/blog/[...slug.vue] -->
 
 <script setup>
+import { WebImage } from '#components';
+
 const { path } = useRoute();
 const { data } = await useAsyncData(`content-${path}`, async () => {
   // fetch document where the document path matches with the cuurent route
@@ -35,15 +38,13 @@ useHead({
 <template>
   <main id="main" class="article-main">
     <header v-if="data.article" class="article-header">
-      <figure class="img-cont h-72 mb-12">
-        <img
-          :src="`/${data.article.img}`"
-          :alt="data.article.title"
-          class="rounded-2xl"
-        />
-        <figcaption>Photo by <a href="https://unsplash.com/@martinbennie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">martin bennie</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
-  
-      </figure>
+      <WebImage
+        :image="`/${data.article.img}`"
+        :author-link="data.article.imgAuthorLink"
+        :author-name="data.article.imgAuthorName"
+        :site-link="data.article.imgSiteLink"
+        :site-name="data.article.imgSiteName"
+      />
       <h1 class="heading">{{ data.article.title }}</h1>
       <p class="supporting">{{ data.article.description }}</p>
       <ul class="article-tags">
