@@ -40,6 +40,7 @@ useHead({
               $contains: filter,
             },
           },
+          sort: { date: -1 },
           $sensitivity: 'base',
         }"
       >
