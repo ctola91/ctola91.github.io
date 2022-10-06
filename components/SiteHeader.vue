@@ -14,6 +14,13 @@
           </li>
         </ul>
       </nav>
+      <nav class="site-nav">
+        <ul class="links">
+          <li class="link">
+            <NuxtLink to="/contact">Contacto</NuxtLink>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 </template>

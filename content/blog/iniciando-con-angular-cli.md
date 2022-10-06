@@ -44,7 +44,7 @@ meta:
 
 Bienvenidos, en este post veremos las ventajas de utilizar Angular CLI dentro de nuestro flujo de trabajo
 
-![Angular CLI comandos](./images/iniciando-con-angular-cli/cli-logo.svg)
+![Angular CLI comandos](/img/iniciando-con-angular-cli/cli-logo.svg)
 
 ## Que es Angular CLI?
 
@@ -77,7 +77,7 @@ ng --version
 ```
 veremos el siguiente mensaje
 
-![Angular CLI Version](./images/iniciando-con-angular-cli/angular-cli-version.jpg)
+![Angular CLI Version](/img/iniciando-con-angular-cli/angular-cli-version.jpg)
 
 Y asi nos aseguramos que nuestro Angular CLI se instalo correctamente.
 
@@ -106,7 +106,7 @@ ng serve
 
 Luego navegamos a la url [http://localhost:4200](http://localhost:4200) para ingresar a la aplicación, el resultado se vera igual a la siguiente imagen:
 
-![Angular first page](./images/iniciando-con-angular-cli/angular-first-page.jpg)
+![Angular first page](/img/iniciando-con-angular-cli/angular-first-page.jpg)
 
 En siguientes post veremos aun mas sobre las herramientas que nos ofrece el Angular CLI, hasta Pronto!
 
