@@ -24,5 +24,10 @@ export default defineNuxtConfig({
     },
     css: [
         '@fortawesome/fontawesome-svg-core/styles.css'
-    ]
+    ],
+    runtimeConfig: {
+        public: {
+            siteKey: '', // Overridden by NUXT_SITE_KEY
+        }
+    }
 })
