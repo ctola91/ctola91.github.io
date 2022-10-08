@@ -1,16 +1,25 @@
 {
+  "name": "christiantola.me",
+  "version": "1.0.0",
+  "authors": {
+    "name": "Christian Marcelo Tola Pacheco",
+    "email": "ctolapacheco@gmail.com"
+  },
   "private": true,
   "scripts": {
+    "copy": "cp blog/CNAME blog/.vuepress/dist/CNAME",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "local-server": "lite-server --baseDir=.output/public"
   },
   "devDependencies": {
     "@nuxt/content": "^2.1.1",
     "@nuxtjs/tailwindcss": "^5.3.3",
     "@tailwindcss/typography": "^0.5.7",
+    "lite-server": "^2.6.1",
     "nuxt": "3.0.0-rc.10"
   },
   "dependencies": {
