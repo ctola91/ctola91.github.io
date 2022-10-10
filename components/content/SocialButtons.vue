@@ -11,7 +11,7 @@ const { data } = await useAsyncData(`content-${path}`, async () => {
 });
 </script>
 <template>
-  <div>
+  <client-only placeholder="Loading...">
     <div id="share-buttons">
       <!-- Facebook -->
       <a
@@ -98,7 +98,7 @@ const { data } = await useAsyncData(`content-${path}`, async () => {
         <font-awesome-icon icon="fa-solid fa-print" />
       </a>
     </div>
-  </div>
+  </client-only>
 </template>
 <style scoped>
 #share-buttons {

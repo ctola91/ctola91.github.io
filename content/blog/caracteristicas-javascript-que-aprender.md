@@ -292,8 +292,3 @@ Hasta aqui hemos agregado los feature que cualquier desarrollador Javascript deb
 Hasta pronto!
 
 **Compártelo en tus redes Sociales!**
-::SocialButtons
-::
-
-::Disqus
-::

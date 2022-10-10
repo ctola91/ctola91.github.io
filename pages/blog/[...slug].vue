@@ -1,8 +1,7 @@
-
 <!-- ./pages/blog/[...slug.vue] -->
 
 <script setup>
-import { WebImage } from '#components';
+import { WebImage } from "#components";
 
 const { path } = useRoute();
 const { data } = await useAsyncData(`content-${path}`, async () => {
@@ -57,18 +56,6 @@ useHead({
     <section class="article-section">
       <aside class="aside">
         <!-- Toc Component -->
-        <!-- <nav class="toc">
-          <header class="toc-header">
-            <h3 class="text-xl font-bold">Table of contents</h3>
-          </header>
-          <ul class="toc-links">
-            <li v-for="link of data.article.body.toc.links" :key="link.id" :class="`toc-link ${link.depth}`">
-              <a :href="`#${link.id}`">
-                {{ link.text }}
-              </a>
-            </li>
-          </ul>
-        </nav> -->
         <Toc :links="data.article.body.toc.links" />
       </aside>
       <article class="article">
@@ -82,24 +69,12 @@ useHead({
             <p>No content found.</p>
           </template>
         </ContentRenderer>
+        <SocialButtons />
+        <Disqus />
       </article>
     </section>
 
     <!-- PrevNext Component -->
-    <!-- <ul class="prev-next-cont">
-      <li v-if="prev" class="link-item prev">
-        <NuxtLink :to="prev._path">
-          <ArrowLeftIcon class="icon stroke" />
-          <span> {{ prev.title }} </span>
-        </NuxtLink>
-      </li>
-      <li v-if="next" class="link-item next">
-        <NuxtLink :to="next._path">
-          <span> {{ next.title }} </span>
-          <ArrowRightIcon class="icon stroke" />
-        </NuxtLink>
-      </li>
-    </ul> -->
     <PrevNext :prev="prev" :next="next" />
   </main>
 </template>

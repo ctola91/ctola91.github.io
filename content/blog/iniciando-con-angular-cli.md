@@ -111,8 +111,3 @@ Luego navegamos a la url [http://localhost:4200](http://localhost:4200) para ing
 En siguientes post veremos aun mas sobre las herramientas que nos ofrece el Angular CLI, hasta Pronto!
 
 **Compártelo en tus redes Sociales!**
-::SocialButtons
-::
-
-::Disqus
-::

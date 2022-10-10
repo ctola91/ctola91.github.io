@@ -94,3 +94,6 @@ h6 {
 .article-item > * > .wrapper {
   @apply flex items-start gap-4;
 }
+.grecaptcha-badge {
+  visibility: hidden;
+}

@@ -10,6 +10,11 @@
       </div>
     </header>
     <section class="page-section">
+      <InfoBox :type="notificationType" v-if="showNotification">
+        {{ notificationMessage }}
+      </InfoBox>
+    </section>
+    <section class="page-section">
       <div class="contact-container">
         <form class="form" @submit.prevent="submitContactForm">
           <div class="form-group">
@@ -100,12 +105,26 @@ const messageLabel = ref("Mensaje");
 const message = ref("");
 const socialLabel = ref("Sigueme en mis redes sociales");
 const submitLabel = ref("Enviar");
-const errors = ref("");
+const showNotification = ref(false);
+const notificationType = ref("");
+const notificationMessage = ref("");
 
 const cleanForm = () => {
   name.value = "";
   message.value = "";
   email.value = "";
+};
+
+const updateInfoMessage = (isShowed, msg, type) => {
+  showNotification.value = isShowed;
+  notificationMessage.value = msg;
+  notificationType.value = type;
+};
+
+const hideInfoMessage = (isShowed, msg, type) => {
+  setTimeout(() => {
+    updateInfoMessage(isShowed, msg, type);
+  }, 3000);
 };
 
 const submitContactForm = () => {
@@ -135,9 +154,20 @@ const submitContactForm = () => {
           }
         );
         if (success) {
+          updateInfoMessage(
+            true,
+            "Su solicitud se ha enviado, gracias por contactarse",
+            "success"
+          );
           cleanForm();
+          hideInfoMessage(false, "", "");
         } else {
-          console.log("Error");
+          updateInfoMessage(
+            true,
+            "El formulario en este momento no se encuentra disponible, intente de nuevo o contactame por mis redes sociales",
+            "error"
+          );
+          hideInfoMessage(false, "", "");
         }
         // grecaptcha
         //   .execute("6LdBWDIaAAAAAM3Johh01Gxws7ue03ZCngjSeg0Z", {
@@ -265,6 +295,9 @@ const submitContactForm = () => {
 </script>
 
 <style scoped>
+.grecaptcha-badge {
+  @apply visible;
+}
 .social-networks {
   width: 100%;
   margin: 20px auto 0;

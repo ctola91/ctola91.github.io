@@ -394,8 +394,3 @@ npm run start:dev
 ```
 
 **Compártelo en tus redes Sociales!**
-::SocialButtons
-::
-
-::Disqus
-::

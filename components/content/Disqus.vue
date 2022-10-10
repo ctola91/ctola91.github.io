@@ -16,7 +16,9 @@ onMounted(() => {
 });
 </script>
 <template>
-  <div id="disqus_thread"></div>
+  <client-only placeholder="Loading...">
+    <div id="disqus_thread"></div>
+  </client-only>
 </template>
 <style scoped>
 div#disqus_thread {

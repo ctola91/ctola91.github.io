@@ -180,8 +180,3 @@ En siguientes artículos estudiaremos los patrones de diseño y como utilizarlos
 Saludos.
 
 **Compártelo en tus redes Sociales!**
-::SocialButtons
-::
-
-::Disqus
-::

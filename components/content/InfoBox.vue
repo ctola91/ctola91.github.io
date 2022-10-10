@@ -45,6 +45,12 @@ details .details {
 .info-box .icon {
   @apply shrink-0;
 }
+.info-box.success {
+  @apply bg-green-200 border-green-400 text-green-600;
+}
+.info-box.success .icon.solid {
+  @apply fill-green-600;
+}
 .info-box.warning {
   @apply bg-yellow-200 border-yellow-400 text-yellow-600;
 }

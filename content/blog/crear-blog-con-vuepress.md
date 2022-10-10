@@ -189,8 +189,3 @@ Si crees que este contenido puede ser relevante para otras personas además de t
 Saludos!
 
 **Compártelo en tus redes Sociales!**
-::SocialButtons
-::
-
-::Disqus
-::
