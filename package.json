@@ -7,7 +7,7 @@
   },
   "private": true,
   "scripts": {
-    "copy": "cp blog/CNAME blog/.vuepress/dist/CNAME",
+    "copy": "cp CNAME .output/public/CNAME",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",

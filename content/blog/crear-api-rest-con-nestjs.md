@@ -1,10 +1,10 @@
 ---
 title: Crear un api rest con Nest.js
-img: "img/codigo-limpio.jpg"
+img: "img/api.jpg"
 imgAuthorName: martin bennie
-imgAuthorLink: https://unsplash.com/@martinbennie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+imgAuthorLink: https://unsplash.com/@dels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 imgSiteName: Unsplash
-imgSiteLink: https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+imgSiteLink: https://unsplash.com/s/photos/api?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 date: 2019-2-17
 author: Christian Tola
 location: Bolivia
@@ -16,7 +16,7 @@ meta:
   # - property: fb:app_id
   #   content:
   - property: og:url
-    content: https://christiantola.me/blog/create-api-rest-nestjs.html
+    content: https://christiantola.me/blog/crear-api-rest-con-nestjs
   - property: og:type
     content: article
   - property: og:title
@@ -24,7 +24,7 @@ meta:
   - property: og:description
     content: Este es el primero de los artículos relacionados a Nest.js, Nest.js es un Framework para el desarrollo backend.
   - property: og:image
-    content: https://christiantola.me/images/banners/BannerTemplateNode.jpg
+    content: https://christiantola.me/img/api.jpg
   - property: og:site_name
     content: christiantola.me
   - property: article:author
@@ -39,7 +39,7 @@ meta:
   - name: twitter:description
     content: Este es el primero de los artículos relacionados a Nest.js, Nest.js es un Framework para el desarrollo backend.
   - name: twitter:image
-    content: https://christiantola.me/images/banners/BannerTemplateNode.jpg
+    content: https://christiantola.me/img/api.jpg
 ---
 
 Node.js es un entorno de programación que permite crear aplicaciones en el lado del servidor utilizando Javascript como lenguaje principal, esto ha generado mucha popularidad entre los desarrolladores ya que permite desarrollar una aplicación en todos sus niveles (Base de datos, Backend, Frontend) con Javascript.

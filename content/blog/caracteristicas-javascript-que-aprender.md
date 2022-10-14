@@ -16,7 +16,7 @@ meta:
   # - property: fb:app_id
   #   content: 
   - property: og:url
-    content: https://christiantola.me/blog/js-features-you-may-know.html
+    content: https://christiantola.me/blog/caracteristicas-javascript-que-aprender
   - property: og:type
     content: article
   - property: og:title
@@ -24,7 +24,7 @@ meta:
   - property: og:description
     content: Javascript va mejorando a pasos agigantados, actualmente contamos con es5, es6, y más, en este post veremos las características más importantes que deberíamos conocer para mejorar nuestro código...
   - property: og:image
-    content: https://christiantola.me/images/banners/BannerTemplateJavascript.jpg
+    content: https://christiantola.me/img/codigo-limpio.jpg
   - property: og:site_name
     content: christiantola.me
   - property: article:author
@@ -39,7 +39,7 @@ meta:
   - name: twitter:description
     content: Javascript va mejorando a pasos agigantados, actualmente contamos con es5, es6, y más, en este post veremos las características más importantes que deberíamos conocer para mejorar nuestro código...
   - name: twitter:image
-    content: https://christiantola.me/images/banners/BannerTemplateJavascript.jpg
+    content: https://christiantola.me/img/codigo-limpio.jpg
 ---
 
 ## Introducción 

@@ -16,7 +16,7 @@ meta:
   # - property: fb:app_id
   #   content: 
   - property: og:url
-    content: https://christiantola.me/blog/start-with-vue.html
+    content: https://christiantola.me/blog/desarrollo-progresivo-con-vue
   - property: og:type
     content: article
   - property: og:title
@@ -24,7 +24,7 @@ meta:
   - property: og:description
     content: Vue.js Es un Framework Javascript para el desarrollo de interfaces de usuario....
   - property: og:image
-    content: https://christiantola.me/images/banners/BannerTemplateVue.jpg
+    content: https://christiantola.me/img/codigo-limpio.jpg
   - property: og:site_name
     content: christiantola.me
   - property: article:author
@@ -39,7 +39,7 @@ meta:
   - name: twitter:description
     content: Vue.js Es un Framework Javascript para el desarrollo de interfaces de usuario....
   - name: twitter:image
-    content: https://christiantola.me/images/banners/BannerTemplateVue.jpg
+    content: https://christiantola.me/img/codigo-limpio.jpg
 ---
 
 Vue.js es un Framework Javascript para el desarrollo de interfaces de usuario, su principal característica es la flexibilidad que ofrece al momento de desarrollar tanto aplicaciones pequeñas hasta aplicaciones empresariales de gran tamaño.

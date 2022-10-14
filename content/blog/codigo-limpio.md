@@ -17,7 +17,7 @@ meta:
   # - property: fb:app_id
   #   content: 
   - property: og:url
-    content: https://christiantola.me/2019/01/03/codigo-limpio/
+    content: https://christiantola.me/blog/codigo-limpio
   - property: og:type
     content: article
   - property: og:title
@@ -25,7 +25,7 @@ meta:
   - property: og:description
     content: Que es el código limpio? por que deberíamos escribir código limpio? Aprenderemos mas sobre las bases del código limpio.
   - property: og:image
-    content: https://christiantola.me/images/posts/clean-code.jpg
+    content: https://christiantola.me/img/codigo-limpio.jpg
   - property: og:site_name
     content: christiantola.me
   - property: article:author
@@ -40,7 +40,7 @@ meta:
   - name: twitter:description
     content: Que es el código limpio? por que deberíamos escribir código limpio? Aprenderemos mas sobre las bases del código limpio.
   - name: twitter:image
-    content: https://christiantola.me/images/posts/BannerTemplateCode.jpg
+    content: https://christiantola.me/img/codigo-limpio.jpg
 ---
 
 *Este es el primer articulo de la serie de código limpio donde iremos agregando consejos de como mejorar nuestro código.*

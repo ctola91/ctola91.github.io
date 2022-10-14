@@ -169,129 +169,12 @@ const submitContactForm = () => {
           );
           hideInfoMessage(false, "", "");
         }
-        // grecaptcha
-        //   .execute("6LdBWDIaAAAAAM3Johh01Gxws7ue03ZCngjSeg0Z", {
-        //     action: "contactform",
-        //   })
-        //   .then(async function (token) {
-        //     bodyForm.token = token;
-        //     const { data: success } = await useFetch(
-        //       "https://us-central1-my-blog-adc4a.cloudfunctions.net/app/api/contacts",
-        //       {
-        //         method: "POST",
-        //         body: bodyForm,
-        //       }
-        //     );
-        //     if (success) {
-        //       cleanForm();
-        //     } else {
-        //       console.log("Error");
-        //     }
-        //   })
-        //   .catch((e) => {
-        //     console.log(e);
-        //     errorMessage = e;
-        //   });
       });
     } catch (e) {
       console.log(e);
     }
   }
 };
-
-// import axios from "axios";
-
-// export default {
-//   data() {
-//     return {
-//       name: null,
-//       email: null,
-//       message: null,
-//       errors: [],
-//     };
-//   },
-//   props: ["language"],
-//   mounted() {},
-//   computed: {
-//     emailLabel() {
-//       return this.language === "en" ? "Your Email" : "Email";
-//     },
-//     nameLabel() {
-//       return this.language === "en" ? "Your Name" : "Su Nombre";
-//     },
-//     messageLabel() {
-//       return this.language === "en" ? "Your Message" : "Mensaje";
-//     },
-//     submitLabel() {
-//       return this.language === "en" ? "Send" : "Enviar";
-//     },
-//     socialLabel() {
-//       return this.language === "en"
-//         ? "Follow my Social Networks"
-//         : "Sigueme en mis redes Sociales";
-//     },
-//   },
-//   methods: {
-//     cleanForm() {
-//       this.name = "";
-//       this.email = "";
-//       this.message = "";
-//     },
-//     submitContactForm(e) {
-//       e.preventDefault();
-//       let cleanFormEvent = this.cleanForm;
-//       let toastr = this.$toastr;
-//       let name = this.name;
-//       let email = this.email;
-//       let message = this.message;
-//       if (name && email && message) {
-//         let bodyForm = {
-//           name: name,
-//           email: email,
-//           message: message,
-//           token: null,
-//           action: "contactform",
-//         };
-//         grecaptcha.ready(function () {
-//           grecaptcha
-//             .execute("6LdBWDIaAAAAAM3Johh01Gxws7ue03ZCngjSeg0Z", {
-//               action: "contactform",
-//             })
-//             .then(function (token) {
-//               bodyForm.token = token;
-//               axios
-//                 .post(
-//                   "https://us-central1-my-blog-adc4a.cloudfunctions.net/app/api/contacts",
-//                   bodyForm
-//                 )
-//                 .then(function (res) {
-//                   if (res.data.success) {
-//                     toastr.Add({
-//                       msg: "Su solicitud de contacto se ha enviado, gracias por contactarse.",
-//                       title: "Formulario de Contact",
-//                       name: "successContactForm",
-//                       type: "success",
-//                       position: "toast-bottom-full-width",
-//                     });
-//                     cleanFormEvent();
-//                   }
-//                 })
-//                 .catch(function (err) {
-//                   toastr.Add({
-//                     msg: "El formulario en este momento no se encuentra disponible, intente de nuevo o contactame por mis redes sociales",
-//                     title: "Formulario de Contact",
-//                     name: "errorContactForm",
-//                     type: "warning",
-//                     position: "toast-bottom-full-width",
-//                   });
-//                   console.log(err);
-//                 });
-//             });
-//         });
-//       }
-//     },
-//   },
-// };
 </script>
 
 <style scoped>

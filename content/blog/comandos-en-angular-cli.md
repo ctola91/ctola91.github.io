@@ -1,6 +1,6 @@
 ---
 title: Comandos en Angular CLI
-img: 'img/codigo-limpio.jpg'
+img: 'img/config.jpg'
 imgAuthorName: martin bennie
 imgAuthorLink: https://unsplash.com/@martinbennie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 imgSiteName: Unsplash
@@ -17,7 +17,7 @@ meta:
   # - property: fb:app_id
   #   content: 
   - property: og:url
-    content: https://christiantola.me/blog/angular-cli-commands.html
+    content: https://christiantola.me/blog/comandos-en-angular-cli
   - property: og:type
     content: article
   - property: og:title
@@ -25,12 +25,12 @@ meta:
   - property: og:description
     content: Angular CLI cuenta con un gran set de comandos que nos permitirán optimizar nuestro trabajo Angular.
   - property: og:image
-    content: https://christiantola.me/img/banners/BannerTemplateAngular.jpg
+    content: https://christiantola.me/img/config.jpg
   - property: og:site_name
     content: christiantola.me
   - property: article:author
     content: https://www.facebook.com/ctola01/
-# twitter
+# twitter             
   - name: twitter:card
     content: summary
   - name: twitter:site
@@ -40,7 +40,7 @@ meta:
   - name: twitter:description
     content: Angular CLI cuenta con un gran set de comandos que nos permitirán optimizar nuestro trabajo Angular.
   - name: twitter:image
-    content: https://christiantola.me/img/banners/BannerTemplateAngular.jpg
+    content: https://christiantola.me/img/config.jpg
 ---
 
 En este post veremos mas a profundidad los comandos que el Angular CLI nos ofrece y su uso.

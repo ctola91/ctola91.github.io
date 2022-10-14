@@ -1,10 +1,10 @@
 ---
 title: Crear un Blog con Vue.js y Vuepress
-img: "img/codigo-limpio.jpg"
-imgAuthorName: martin bennie
-imgAuthorLink: https://unsplash.com/@martinbennie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+img: "img/readmore.jpg"
+imgAuthorName: Sincerely Media
+imgAuthorLink: https://unsplash.com/@sincerelymedia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 imgSiteName: Unsplash
-imgSiteLink: https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+imgSiteLink: https://unsplash.com/s/photos/blog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 date: 2020-4-12
 author: Christian Tola
 location: Bolivia
@@ -17,7 +17,7 @@ meta:
   # - property: fb:app_id
   #   content: 
   - property: og:url
-    content: https://christiantola.me/blog/create-vuepress-blog.html
+    content: https://christiantola.me/blog/crear-blog-con-vuepress
   - property: og:type
     content: article
   - property: og:title
@@ -25,7 +25,7 @@ meta:
   - property: og:description
     content: Vuepress es un generador de sitios estáticos basado en el framework vue.js.
   - property: og:image
-    content: https://christiantola.me/images/banners/BannerTemplateVuePress.jpg
+    content: https://christiantola.me/img/readmore.jpg
   - property: og:site_name
     content: christiantola.me
   - property: article:author
@@ -40,7 +40,7 @@ meta:
   - name: twitter:description
     content: Vuepress es un generador de sitios estáticos basado en el framework vue.js.
   - name: twitter:image
-    content: https://christiantola.me/images/banners/BannerTemplateVuePress.jpg
+    content: https://christiantola.me/img/readmore.jpg
 ---
 
 [VuePress](https://vuepress.vuejs.org/) es un generador de sitios estáticos basado en el framework vue.js, provee un generador minimalista de sitios estáticos con soporte de temas basado en componentes de Vue.js, una API para el soporte de plugins, y un tema por defecto optimizado para la escritura de documentación técnica, originalmente creado para soportar la documentación del framework Vue.js y sus proyectos secundarios.

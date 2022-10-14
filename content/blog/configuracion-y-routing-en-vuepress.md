@@ -1,10 +1,11 @@
 ---
 title: Archivo de Configuración y Rutas con VuePress
-img: "img/codigo-limpio.jpg"
-imgAuthorName: martin bennie
-imgAuthorLink: https://unsplash.com/@martinbennie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+img: "img/config.jpg"
+imgAuthorName: Sigmund
+imgAuthorLink: https://unsplash.com/@sigmund?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 imgSiteName: Unsplash
-imgSiteLink: https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+imgSiteLink: hhttps://unsplash.com/s/photos/configuration?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+
 date: 2020-4-19
 tags:
   - vue
@@ -18,7 +19,7 @@ meta:
   # - property: fb:app_id
   #   content:
   - property: og:url
-    content: https://christiantola.me/blog/create-vuepress-blog.html
+    content: https://christiantola.me/blog/configuracion-y-routing-en-vuepress
   - property: og:type
     content: article
   - property: og:title
@@ -26,7 +27,7 @@ meta:
   - property: og:description
     content: En este segundo artículo sobre vuepress, veremos el manejo de rutas y el archivo de configuración con vuepress
   - property: og:image
-    content: https://christiantola.me/images/banners/BannerTemplateVuePress.jpg
+    content: https://christiantola.me/img/config.jpg
   - property: og:site_name
     content: christiantola.me
   - property: article:author
@@ -41,7 +42,7 @@ meta:
   - name: twitter:description
     content: En este segundo artículo sobre vuepress, veremos el manejo de rutas y el archivo de configuración con vuepress
   - name: twitter:image
-    content: https://christiantola.me/images/banners/BannerTemplateVuePress.jpg
+    content: https://christiantola.me/img/config.jpg
 ---
 
 En este segundo artículo sobre vuepress, veremos el manejo de rutas y el archivo de configuración con vuepress.
