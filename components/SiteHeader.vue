@@ -1,22 +1,19 @@
 <template>
   <header class="site-header">
-    <div class="wrapper">
+    <div class="wrapper flex justify-between">
       <NuxtLink to="/" class="no-underline">
         <figure class="site-logo">
-          <h1><img src="/assets/img/logoFull.svg" alt="christiantola.me" /></h1>
+          <h1>
+          <img src="/assets/img/logoFull.svg" alt="christiantola.me" /></h1>
         </figure>
       </NuxtLink>
 
       <nav class="site-nav">
-        <ul class="links">
-          <li class="link">
+        <ul class="links flex justify-between">
+          <li class="link mx-1">
             <NuxtLink to="/blog">Blog</NuxtLink>
           </li>
-        </ul>
-      </nav>
-      <nav class="site-nav">
-        <ul class="links">
-          <li class="link">
+          <li class="link mx-1">
             <NuxtLink to="/contact">Contacto</NuxtLink>
           </li>
         </ul>
