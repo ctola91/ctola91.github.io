@@ -4,7 +4,7 @@
       <NuxtLink to="/" class="no-underline">
         <figure class="site-logo">
           <h1>
-          <img src="/assets/img/logoFull.svg" alt="christiantola.me" /></h1>
+          <img src="~/assets/img/logoFull.svg" alt="christiantola.me" /></h1>
         </figure>
       </NuxtLink>
 
