@@ -5,7 +5,7 @@ imgAuthorName: diego
 imgAuthorLink: https://unsplash.com/@madebydiego?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 imgSiteName: Unsplash
 imgSiteLink: https://unsplash.com/s/photos/uyuni?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-date: 2019-1-20
+date: 2019-01-20
 author: Christian Tola
 tags: 
   - code

@@ -5,7 +5,7 @@ imgAuthorName: diego
 imgAuthorLink: https://unsplash.com/@madebydiego?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 imgSiteName: Unsplash
 imgSiteLink: https://unsplash.com/s/photos/uyuni?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-date: 2019-1-6
+date: 2019-01-06
 author: Christian Tola
 location: Bolivia
 tags: 

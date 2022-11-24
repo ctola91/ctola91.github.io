@@ -5,7 +5,7 @@ imgAuthorName: martin bennie
 imgAuthorLink: https://unsplash.com/@martinbennie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 imgSiteName: Unsplash
 imgSiteLink: https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-date: 2019-2-10
+date: 2019-02-10
 tags: 
   - angular
   - vuepress

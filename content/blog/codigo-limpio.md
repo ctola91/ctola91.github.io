@@ -5,7 +5,7 @@ imgAuthorName: martin bennie
 imgAuthorLink: https://unsplash.com/@martinbennie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 imgSiteName: Unsplash
 imgSiteLink: https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-date: 2019-1-3
+date: 2019-01-03
 tags: 
     - code
     - patterns
