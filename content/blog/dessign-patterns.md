@@ -23,13 +23,13 @@ meta:
   - property: og:title
     content: Patrones de diseño
   - property: og:description
-    content: En el año 1995 se publico el libro "Design Patterns - Elements of Reusable Object Oriented Software"...
+    content: En el año 1995 se publico el libro Design Patterns - Elements of Reusable Object Oriented Software...
   - property: og:image
     content: https://christiantola.me/img/dessign-patterns.jpg
   - property: og:site_name
     content: christiantola.me
   - property: article:author
-    content: https://www.facebook.com/ctola01/
+    content: '@ctola91'
 # twitter
   - name: twitter:card
     content: summary
@@ -42,8 +42,6 @@ meta:
   - name: twitter:image
     content: https://christiantola.me/img/dessign-patterns.jpg
 ---
-
-## Que son?
 
 Los Patrones de diseño *(Design patterns en ingles)* son soluciones a problemas de diseño recurrentes que ocurren en la programación, al ser recurrentes estos problemas, un desarrollador podría encontrar diferentes maneras de abordar el problema llegando a diferentes soluciones, algunas mas optimas que otras.
 

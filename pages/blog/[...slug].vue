@@ -4,7 +4,7 @@
 import { WebImage } from "#components";
 
 definePageMeta({
-  layout: "custom"
+  layout: "custom",
 });
 const { path } = useRoute();
 const { data } = await useAsyncData(`content-${path}`, async () => {
@@ -23,18 +23,15 @@ const { data } = await useAsyncData(`content-${path}`, async () => {
 });
 // destructure `prev` and `next` value from data
 const [prev, next] = data.value.surround;
-console.log({ data, prev, next });
+const metaInfo = [
+  { name: "description", content: data.value.article.description },
+  ...data.value.article.meta,
+];
+console.log(metaInfo);
 // set the meta
 useHead({
   title: data.value.article.title,
-  meta: [
-    { name: "description", content: data.value.article.description },
-    {
-      hid: "og:image",
-      property: "og:image",
-      content: `https://site.com/${data.value.article.img}`,
-    },
-  ],
+  meta: metaInfo,
 });
 </script>
 <template>

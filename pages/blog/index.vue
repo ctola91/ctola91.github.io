@@ -12,20 +12,16 @@ const {
 const filter = ref(tags?.split(","));
 // set meta for page
 useHead({
-  title: "All articles",
-  meta: [
-    { name: "description", content: "Here's a list of all my great articles" },
-  ],
+  title: "Mi Blog",
+  meta: [{ name: "description", content: "Lee sobre mis articulos" }],
 });
 </script>
 <template>
   <main>
     <header class="page-heading">
       <div class="wrapper">
-        <h1 class="text-5xl font-extrabold">All articles</h1>
-        <p class="font-medium text-lg">
-          Here's a list of all my great articles
-        </p>
+        <h1 class="text-5xl font-extrabold">Mi Blog</h1>
+        <p class="font-medium text-lg">Lee mis articulo</p>
       </div>
     </header>
     <section class="page-section">

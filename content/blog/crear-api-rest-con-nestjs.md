@@ -28,7 +28,7 @@ meta:
   - property: og:site_name
     content: christiantola.me
   - property: article:author
-    content: https://www.facebook.com/ctola01/
+    content: '@ctola91'
   # twitter
   - name: twitter:card
     content: summary
