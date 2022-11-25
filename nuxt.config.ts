@@ -1,6 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-    ssr: true,
+    ssr: false, // TODO: workaround for development
+    // ssr: true,
     modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
     content: {
         // https://content.nuxtjs.org/api/configuration

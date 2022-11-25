@@ -2,6 +2,7 @@
 
 <script setup>
 definePageMeta({
+  layout: "custom",
   key: (route) => route.fullPath,
 });
 // get tag query

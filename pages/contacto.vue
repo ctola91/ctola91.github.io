@@ -85,6 +85,9 @@
   </main>
 </template>
 <script setup>
+definePageMeta({
+  layout: "custom",
+});
 const {
   public: { siteKey },
 } = useRuntimeConfig();

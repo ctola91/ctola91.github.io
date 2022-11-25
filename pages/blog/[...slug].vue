@@ -3,6 +3,9 @@
 <script setup>
 import { WebImage } from "#components";
 
+definePageMeta({
+  layout: "custom"
+});
 const { path } = useRoute();
 const { data } = await useAsyncData(`content-${path}`, async () => {
   // fetch document where the document path matches with the cuurent route

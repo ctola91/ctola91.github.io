@@ -4,7 +4,8 @@
       <NuxtLink to="/" class="no-underline">
         <figure class="site-logo">
           <h1>
-          <img src="/assets/img/logoFull.svg" alt="christiantola.me" /></h1>
+            <img src="/assets/img/logoFull.svg" alt="christiantola.me" />
+          </h1>
         </figure>
       </NuxtLink>
 
@@ -14,7 +15,10 @@
             <NuxtLink to="/blog">Blog</NuxtLink>
           </li>
           <li class="link mx-1">
-            <NuxtLink to="/contact">Contacto</NuxtLink>
+            <NuxtLink to="/about">Sobre mi</NuxtLink>
+          </li>
+          <li class="link mx-1">
+            <NuxtLink to="/contacto">Contacto</NuxtLink>
           </li>
         </ul>
       </nav>
