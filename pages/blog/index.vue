@@ -13,7 +13,7 @@ const filter = ref(tags?.split(","));
 // set meta for page
 useHead({
   title: "Mi Blog",
-  meta: [{ name: "description", content: "Lee sobre mis articulos" }],
+  meta: [{ name: "description", content: "Lee sobre Programación" }],
 });
 </script>
 <template>

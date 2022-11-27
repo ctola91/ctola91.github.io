@@ -97,7 +97,7 @@ los valores que son declarados con const una vez asignados no pueden reasignarse
 
 Cuando almacenamos objetos utilizando la sentencia *const* la referencia al objeto no se puede cambiar, pero si es posible modificar sus atributos.
 
-```js
+```javascript
 const person = {
   name: 'Christian',
   lastName: 'Tola'
