@@ -61,7 +61,7 @@ Veamos como escribir código limpio.
 
 Se deben usar nombres que revelen las intenciones, estos nombres si bien son validos, no brindan información util al desarrollador.
 
-```ts
+```
 // Mal Código
 let d; // Este tipo de nombres no ofrecen ningún tipo de información sobre su uso.
 let ac;
@@ -77,7 +77,7 @@ const HTTP_METHODS;
 
 Evitar nombres con variaciones mínimas, estos nombres agregan ruido al momento de realizar una búsqueda de alguna clase especifica, método, o variable.
 
-```ts
+```
 /** 
  * Ambos nombres son parecidos pero no iguales, esto puede generar confusión 
  * para el desarrollador 
@@ -92,7 +92,7 @@ export default class XYZControllerForEfficientStorageOfStrings {
 
 Usar nombres que se puedan buscar y que sean fáciles de pronunciar. 
 
-```ts
+```
 // variables
 let accounts;
 let accountsInformation;

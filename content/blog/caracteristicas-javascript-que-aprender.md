@@ -54,7 +54,7 @@ Con esta introducción entendemos un poco mas sobre que es ECMAScript, y por que
 
 Para declarar variables en javascript generalmente utilizamos la palabra reservada **var**, pero al utilizar la palabra var estamos creando una variable global dentro del ámbito de toda la aplicación, pruebe en la consola del navegador hacer lo siguiente:
 
-```js
+```
 var title = 'Hello World';
 console.log(window.title); // Hello World
 ```
@@ -65,7 +65,7 @@ Como vera al hacer ```console.log(window.title);``` este imprime el valor de la 
 
 otro ejemplo es cuando utilizamos la sentencia **for**:
 
-```js
+```
 for(var i = 0; i <= 10; i++) {
   console.log(i); // 1, 2, 3, ... , 10
 }
@@ -73,7 +73,7 @@ console.log(i) // 11
 ```
 en este caso podemos ver que la variable *i* sigue activa luego de haber finalizado el bucle, regresando el ultimo valor que fue asignado a la variable *i*, esto podría ocasionar errores mas adelante si volvemos a llamar a la variable i global, para evitar este problema nace la sentencia **let**.
 
-```js
+```
 for(let i = 0; i <= 10; i++) {
   console.log(i); // 1, 2, 3, ... , 10
 }
@@ -87,7 +87,7 @@ La palabra reservada *let* nos permite crear variables que pertenecen solo al á
 
 Para asignar valores que no van a cambiar en el tiempo (Constantes), utilizamos la sentencia **const**.
 
-```js
+```
 const PI = 3.14;
 PI = 123; // TypeError: Assignment to constant variable.
 ```
@@ -114,7 +114,7 @@ console.log(person); // { name: 'Marcelo', lastName: 'Tola' }
 
 El Operador de Propagación (spread operator) convierte on objeto iterable en valores individuales, muy util al momento de utilizar arrays u objetos para pasar valores.
 
-```js
+```
 // Merge two arrays
 
 let newUsers = ['tester', 'dev', 'dbadmin', 'devops'];
@@ -134,7 +134,7 @@ courses.push(...languages); // ['sql', 'js', 'c#', 'java','python', 'go']
 
 Es lo contrario de el operador spread, convierte una lista de elementos a un array, util al momento de enviar múltiples parámetros a una función.
 
-```js
+```
 function setNumbers(param1, param2, ...args) {
   console.log(param1); // 1
   console.log(param2); // 2
@@ -151,7 +151,7 @@ La desestructuración es uno de los features que trae ES6 que son mas usados, va
 
 La desestructuración hace posible la extracción de datos de arreglos u objetos a valores simples, todo en una sola sentencia, veamos un ejemplo:
 
-```js
+```
 var 
 // antes de ES6
 var name = myUser.name; // Christian
@@ -164,7 +164,7 @@ const { name, lastName, age } = myUser;
 ```
 lo mismo aplica para los arreglos, la desestructuración se aplica en base a las posiciones del arreglo.
 
-```js
+```
 let numbers = ['1', '2'];
 
 const [first, second] = numbers;
@@ -172,14 +172,13 @@ console.log(first); // 1
 console.log(second); // 2
 ```
 Es posible agregar valores por defecto en el caso que alguno de los elementos sea undefined.
-```js
-...
-const { id, name = 'generic', description = 'test'} = element;
-...
 
 ```
+const { id, name = 'generic', description = 'test'} = element;
+```
+
 y también ser usados en parámetros de funciones:
-```js
+```
 const registerUser = ({name, lastName, age}) => {
   ...
   console.log(name); // Christian
@@ -193,7 +192,7 @@ registerUser(myUser);
 
 ## Arrow Functions (ES6)
 ES6 provee una nueva forma de crear funciones usando el operador flecha (=>), recuerdas las funciones anonimas? con la nueva sintaxis de las funciones flecha estas son mas resumidas:
-```js
+```
 // antes de ES6
 setTimeout(function () {
   console.log('hello world');
@@ -209,7 +208,7 @@ setTimeout(() => {
 ## Template Literals
 
 Es una nueva forma de crear cadenas de texto que nos permite crear cadenas de texto mas dinamicas ademas de tener soporte de multilinea.
-```js
+```
 // antes de ES6
 var dinamicText = "Hi my name is: " + name + ", I am a " + workPosition;
 // con ES6
@@ -220,7 +219,7 @@ let dimanicText = `Hi my name is: ${name}, I am a ${workPosition}`;
 
 De manera sencilla, el metodo ```map()``` devuelve un nuevo array al que se le aplican operaciones para trasformar sus elementos, un ejemplo seria sacar la raiz cuadrada de todos los elementos del array:
 
-```js
+```
 let array = [ 1, 4, 9];
 let newArray = array.map(e => Math.sqrt(e));
 console.log(array); // [1, 4, 9]
@@ -231,7 +230,7 @@ console.log(newArray); //Resultado [1, 2, 3]
 
 Es una nueva sintaxis para la herencia basada en prototipos, 
 no sufren del efecto de *hoisting*, por ende no se pueden utilizar si no han sido declaradas primero.
-```js
+```
 class Person {
     constructor(firstname, lastname, birthday) {
         this.firstname = firstname;
@@ -250,7 +249,7 @@ class Person {
 
 Una Promesa (Promise) es un objeto que representa la terminacion o el fracaso eventual de una operacion asincrona.
 
-```js
+```
 // creacion de promesas
 function fetchItems(url) {
   return new Promise((resolve, reject) => {
@@ -276,7 +275,7 @@ Aca les envio un link con una muy buena explicacion de lo que son las promesas y
 
 La palabra reservada ```async``` define una funcion asincrona que retorna un objeto ```AsyncFunction```.
 
-```js
+```
 renderItems => async () => {
   let data = await fetchItems('/items');
   if(data.error) {
