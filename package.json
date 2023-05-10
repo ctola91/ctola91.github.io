@@ -20,7 +20,8 @@
     "@nuxtjs/tailwindcss": "^5.3.3",
     "@tailwindcss/typography": "^0.5.7",
     "lite-server": "^2.6.1",
-    "nuxt": "3.0.0-rc.10"
+    "nuxt": "^3.4.3",
+    "postcss-custom-properties": "^13.1.4"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",

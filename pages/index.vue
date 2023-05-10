@@ -3,7 +3,7 @@
     <section class="hero-section">
       <header class="flex flex-col items-center">
         <NuxtLink to="/" class="no-underline w-1/3 mb-2">
-          <img src="/assets/img/logoFull.svg" alt="christiantola.me" />
+          <img src="~/assets/img/logoFull.svg" alt="christiantola.me" />
         </NuxtLink>
         <h1 class="font-black text-8xl">Hola, soy Christian!</h1>
         <p class="text-xl p-3">
